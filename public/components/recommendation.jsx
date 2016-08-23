@@ -59,7 +59,7 @@ class Menu extends React.Component {
             </ul>
           </li>
           <li className="dropdown">
-            <Link to="#" class="dropdown-toggle" data-toggle="dropdown">
+            <Link to="#" className="dropdown-toggle" data-toggle="dropdown">
               性别<span className="caret"></span>
             </Link>
             <ul className="dropdown-menu">

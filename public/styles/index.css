@@ -10,7 +10,7 @@
     width: 85%;
     height: 350px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 80px;
     background: #ffffff;
     box-shadow: 3px 3px #E0E0E0;
 }
@@ -80,3 +80,4 @@
 .first {
     margin-left: 0px;
 }
+

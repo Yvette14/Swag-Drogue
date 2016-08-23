@@ -1,7 +1,23 @@
 import React from 'react';
-import {Link} from 'react-router';
+import {Link,hashHistory} from 'react-router';
+import request from 'superagent'
 
 class EditorBody extends React.Component {
+  componentWillMount() {
+    request
+      .get('/api/cookies')
+      .end((err, res) => {
+        if (err) {
+          if (res.statusCode === 401) {
+            alert('please login!');
+            return hashHistory.push('/login');
+          } else {
+            return alert(err);
+          }
+        }
+      });
+  }
+
   render() {
     return (
       <div className="container-fluid wrapper">
